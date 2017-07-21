@@ -12,7 +12,7 @@ stocks <- data.frame(
   Y = rnorm(10, 0, 2),
   Z = rnorm(10, 0, 4)
 )
-
+```
 
 ## Wide to long
 
