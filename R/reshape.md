@@ -27,7 +27,13 @@ gather(stocks, key = stock, value = price, -time)  # negative col selection
 ### rbase 
 
 ```r
-z <- reshape(stocks, varying = c("X", "Y", "Z"), v.names = "price", direction = "long", times = c("X", "Y", "Z"), timevar = "stock", idvar = "time")
+z <- reshape(stocks, 
+             varying = c("X", "Y", "Z"), 
+             v.names = "price", direction = "long", 
+             times = c("X", "Y", "Z"), 
+             timevar = "stock", 
+             idvar = "time")
+             
 rownames(z) <- NULL
 ```
 
