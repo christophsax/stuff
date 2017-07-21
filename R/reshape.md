@@ -1,7 +1,7 @@
 Reshape
 =======
 
-Eqivalents of R base, tidyverse, data.table or reshape2
+Equivalents of R base, tidyverse, data.table or reshape2
 
 ## Example
 
@@ -33,7 +33,7 @@ z <- reshape(stocks,
              times = c("X", "Y", "Z"), 
              timevar = "stock", 
              idvar = "time")
-             
+
 rownames(z) <- NULL
 ```
 
